@@ -1,0 +1,153 @@
+/* =====================================
+   ADMIN DASHBOARD CSS
+===================================== */
+
+.dashboard{
+
+    width:95%;
+    max-width:1400px;
+    margin:40px auto;
+    padding:20px;
+
+}
+
+.dashboard-cards{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-bottom:40px;
+
+}
+
+.dashboard-card{
+
+    background:#ffffff;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.3s;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.dashboard-card h3{
+
+    color:#0077b6;
+    margin-bottom:15px;
+
+}
+
+.dashboard-card h1{
+
+    color:#ff6600;
+    font-size:40px;
+
+}
+
+/* Table Section */
+
+.table-section{
+
+    background:#ffffff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.table-section h2{
+
+    color:#0077b6;
+    margin:30px 0 15px;
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:30px;
+
+}
+
+table th{
+
+    background:#0096c7;
+    color:white;
+    padding:14px;
+
+}
+
+table td{
+
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:center;
+
+}
+
+table tr:nth-child(even){
+
+    background:#f7f7f7;
+
+}
+
+table tr:hover{
+
+    background:#eef9ff;
+
+}
+/* =====================================
+   LOGOUT BUTTON
+===================================== */
+
+#logoutBtn{
+
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+#logoutBtn:hover{
+
+    background:#b52a37;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.dashboard-cards{
+
+grid-template-columns:1fr;
+
+}
+
+table{
+
+display:block;
+overflow-x:auto;
+
+}
+
+#logoutBtn{
+
+width:100%;
+
+}
+
+}

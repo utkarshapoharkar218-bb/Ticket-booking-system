@@ -1,0 +1,251 @@
+/* =========================================
+   STAY BOOKING PAGE
+========================================= */
+
+.stay-section{
+
+    width:95%;
+    max-width:1300px;
+    margin:40px auto;
+    padding:20px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+    color:#555;
+    font-size:18px;
+    margin-bottom:35px;
+
+}
+
+/* Room Cards */
+
+.room-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-bottom:40px;
+
+}
+
+.room-card{
+
+    background:#ffffff;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    padding:25px;
+    text-align:center;
+    transition:.3s;
+
+}
+
+.room-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.room-image{
+
+    font-size:70px;
+    margin-bottom:15px;
+
+}
+
+.room-card h3{
+
+    color:#0077b6;
+    margin-bottom:15px;
+
+}
+
+.room-card ul{
+
+    list-style:none;
+    padding:0;
+    margin-bottom:20px;
+
+}
+
+.room-card ul li{
+
+    padding:6px 0;
+    color:#555;
+
+}
+
+.room-card h4{
+
+    color:#ff6600;
+    font-size:24px;
+    margin-bottom:20px;
+
+}
+
+.room-card button{
+
+    width:100%;
+    padding:13px;
+    border:none;
+    background:#0096c7;
+    color:white;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.room-card button:hover{
+
+    background:#023e8a;
+
+}
+
+/* Booking Form */
+
+.form-box{
+
+    background:#ffffff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    margin-bottom:30px;
+
+}
+
+.form-box h3{
+
+    color:#0077b6;
+    margin-bottom:20px;
+
+}
+
+.form-box label{
+
+    display:block;
+    margin-top:15px;
+    margin-bottom:6px;
+    font-weight:bold;
+
+}
+
+.form-box input{
+
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+
+}
+/* =========================================
+   SUMMARY TABLE
+========================================= */
+
+.summary-table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+.summary-table td{
+
+    border:1px solid #ddd;
+    padding:15px;
+    font-size:17px;
+
+}
+
+.summary-table tr:nth-child(even){
+
+    background:#f7f7f7;
+
+}
+
+.grand-total{
+
+    background:#0096c7;
+    color:white;
+    font-weight:bold;
+
+}
+
+/* Buttons */
+
+.button-group{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+
+}
+
+.book-btn{
+
+    background:#28a745;
+    color:white;
+    padding:15px 35px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+
+}
+
+.book-btn:hover{
+
+    background:#218838;
+
+}
+
+.reset-btn{
+
+    background:#dc3545;
+    color:white;
+    padding:15px 35px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+
+}
+
+.reset-btn:hover{
+
+    background:#c82333;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.room-container{
+
+grid-template-columns:1fr;
+
+}
+
+.button-group{
+
+flex-direction:column;
+
+}
+
+.book-btn,
+.reset-btn{
+
+width:100%;
+
+}
+
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">
+
+<span class="logo-icon">💦</span>
+
+<h1>Fun & Food Water Park</h1>
+
+</div>
+
+<nav class="navbar">
+
+<a href="index.html">Home</a>
+<a href="booking.html">Book Ticket</a>
+<a href="food.html">Food Booking</a>
+<a href="stay.html">Stay Booking</a>
+<a href="#" onclick="logout(); return false;">Logout</a>
+
+</nav>
+
+</header>
+
+<section class="dashboard">
+
+<h2 class="section-title">
+
+📊 Admin Dashboard
+
+</h2>
+
+<div class="dashboard-cards">
+
+<div class="dashboard-card">
+
+<h3>Total Ticket Bookings</h3>
+
+<h1 id="ticketCount">0</h1>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>Total Food Orders</h3>
+
+<h1 id="foodCount">0</h1>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>Total Stay Bookings</h3>
+
+<h1 id="stayCount">0</h1>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>Total Revenue</h3>
+
+<h1 id="totalRevenue">₹0</h1>
+
+</div>
+
+</div>
+
+<div class="table-section">
+
+<h2>🎫 Ticket Bookings</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Booking ID</th>
+
+<th>Name</th>
+
+<th>Date</th>
+
+<th>Total</th>
+
+</tr>
+
+</thead>
+
+<tbody id="ticketTable">
+
+</tbody>
+
+</table>
+<h2>🍔 Food Orders</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Order ID</th>
+
+<th>Date</th>
+
+<th>Total</th>
+
+</tr>
+
+</thead>
+
+<tbody id="foodTable">
+
+</tbody>
+
+</table>
+
+<h2>🏨 Stay Bookings</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Booking ID</th>
+
+<th>Customer</th>
+
+<th>Room</th>
+
+<th>Total</th>
+
+</tr>
+
+</thead>
+
+<tbody id="stayTable">
+
+</tbody>
+
+</table>
+
+<div style="text-align:center;margin-top:30px;">
+
+<button id="logoutBtn" class="book-btn">
+
+Logout
+
+</button>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<p>
+
+© 2026 Fun & Food Water Park | All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/admin.js"></script>
+
+</body>
+
+</html>

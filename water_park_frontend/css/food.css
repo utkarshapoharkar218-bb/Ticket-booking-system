@@ -1,0 +1,282 @@
+/* =====================================
+        FOOD PAGE CSS
+===================================== */
+
+.food-section{
+
+    width:95%;
+    max-width:1300px;
+    margin:40px auto;
+    padding:20px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+    color:#555;
+    margin-bottom:35px;
+    font-size:18px;
+
+}
+
+.food-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+
+}
+
+.food-card{
+
+    background:#ffffff;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    padding:25px;
+    text-align:center;
+    transition:.3s;
+
+}
+
+.food-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.food-image{
+
+    font-size:70px;
+    margin-bottom:15px;
+
+}
+
+.food-card h3{
+
+    color:#0077b6;
+    margin-bottom:10px;
+
+}
+
+.food-card p{
+
+    color:#666;
+    line-height:24px;
+    margin-bottom:15px;
+
+}
+
+.food-card h4{
+
+    color:#ff6600;
+    font-size:24px;
+    margin-bottom:15px;
+
+}
+
+.food-card label{
+
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+
+}
+
+.food-card input{
+
+    width:90%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin-bottom:18px;
+    font-size:16px;
+
+}
+
+.food-card button{
+
+    width:100%;
+    padding:13px;
+    border:none;
+    border-radius:8px;
+    background:#0096c7;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.food-card button:hover{
+
+    background:#023e8a;
+
+}
+/* =====================================
+        FOOD SUMMARY
+===================================== */
+
+.food-summary{
+
+    margin-top:50px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.food-summary h2{
+
+    text-align:center;
+    color:#0077b6;
+    margin-bottom:25px;
+
+}
+
+.food-summary table{
+
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:30px;
+
+}
+
+.food-summary td{
+
+    border:1px solid #ddd;
+    padding:15px;
+    font-size:18px;
+
+}
+
+.food-summary tr:nth-child(even){
+
+    background:#f5f5f5;
+
+}
+
+.summary-buttons{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+.summary-buttons button{
+
+    padding:15px 30px;
+    border:none;
+    border-radius:8px;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+#clearCart{
+
+    background:#dc3545;
+
+}
+
+#clearCart:hover{
+
+    background:#b02a37;
+
+}
+
+#confirmOrder{
+
+    background:#28a745;
+
+}
+
+#confirmOrder:hover{
+
+    background:#1f8a37;
+
+}
+
+/* =====================================
+        RESPONSIVE
+===================================== */
+
+@media(max-width:768px){
+
+.food-container{
+
+grid-template-columns:1fr;
+
+}
+
+.summary-buttons{
+
+flex-direction:column;
+
+}
+
+.summary-buttons button{
+
+width:100%;
+
+}
+
+.food-card{
+
+padding:20px;
+
+}
+
+.food-image{
+
+font-size:55px;
+
+}
+
+}
+/* Confirm Button */
+
+.confirm-btn{
+
+    background:#28a745;
+    color:white;
+    padding:15px 30px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+
+}
+
+.confirm-btn:hover{
+
+    background:#218838;
+
+}
+
+/* Clear Button */
+
+.clear-btn{
+
+    background:#dc3545;
+    color:white;
+    padding:15px 30px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+
+}
+
+.clear-btn:hover{
+
+    background:#c82333;
+
+}

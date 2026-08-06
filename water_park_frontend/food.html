@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Food Booking | Fun & Food Water Park</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/food.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+
+        <span class="logo-icon">💦</span>
+
+        <h1>Fun & Food Water Park</h1>
+
+    </div>
+
+    <nav class="navbar">
+
+        <a href="index.html">Home</a>
+        <a href="booking.html">Book Ticket</a>
+        <a href="food.html" class="active">Food Booking</a>
+        <a href="stay.html">Stay Booking</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+
+    </nav>
+
+</header>
+
+<section class="food-section">
+
+    <h2 class="section-title">🍽 Food Booking</h2>
+
+    <p class="subtitle">
+        Select your favourite food and add it to your cart.
+    </p>
+
+    <div class="food-container">
+
+        <!-- Veg Combo -->
+
+        <div class="food-card">
+
+            <div class="food-image">🥗</div>
+
+            <h3>Veg Combo</h3>
+
+            <p>Paneer, Rice, Roti & Soft Drink</p>
+
+            <h4>₹250</h4>
+
+            <input type="number" id="vegQty" min="0" value="0">
+
+            <button onclick="addToCart('Veg Combo',250,'vegQty')">
+
+                Add To Cart
+
+            </button>
+
+        </div>
+
+        <!-- Burger Combo -->
+
+        <div class="food-card">
+
+            <div class="food-image">🍔</div>
+
+            <h3>Burger Combo</h3>
+
+            <p>Burger + Fries + Coke</p>
+
+            <h4>₹300</h4>
+
+            <input type="number" id="burgerQty" min="0" value="0">
+
+            <button onclick="addToCart('Burger Combo',300,'burgerQty')">
+
+                Add To Cart
+
+            </button>
+
+        </div>
+
+        <!-- Pizza -->
+
+        <div class="food-card">
+
+            <div class="food-image">🍕</div>
+
+            <h3>Pizza Combo</h3>
+
+            <p>Medium Pizza + Pepsi</p>
+
+            <h4>₹450</h4>
+
+            <input type="number" id="pizzaQty" min="0" value="0">
+
+            <button onclick="addToCart('Pizza Combo',450,'pizzaQty')">
+
+                Add To Cart
+
+            </button>
+
+        </div>
+
+        <!-- Non Veg -->
+
+        <div class="food-card">
+
+            <div class="food-image">🍗</div>
+
+            <h3>Non Veg Combo</h3>
+
+            <p>Chicken Biryani + Coke</p>
+
+            <h4>₹400</h4>
+
+            <input type="number" id="nonvegQty" min="0" value="0">
+
+            <button onclick="addToCart('Non Veg Combo',400,'nonvegQty')">
+
+                Add To Cart
+
+            </button>
+
+        </div>
+<!-- French Fries -->
+
+        <div class="food-card">
+
+            <div class="food-image">🍟</div>
+
+            <h3>French Fries</h3>
+
+            <p>Crispy Fries with Tomato Sauce</p>
+
+            <h4>₹150</h4>
+
+            <input type="number" id="friesQty" min="0" value="0">
+
+            <button onclick="addToCart('French Fries',150,'friesQty')">
+
+                Add To Cart
+
+            </button>
+
+        </div>
+
+        <!-- Cold Drink -->
+
+        <div class="food-card">
+
+            <div class="food-image">🥤</div>
+
+            <h3>Cold Drink</h3>
+
+            <p>500ml Soft Drink</p>
+
+            <h4>₹80</h4>
+
+            <input type="number" id="drinkQty" min="0" value="0">
+
+            <button onclick="addToCart('Cold Drink',80,'drinkQty')">
+
+                Add To Cart
+
+            </button>
+
+        </div>
+
+        <!-- Ice Cream -->
+
+        <div class="food-card">
+
+            <div class="food-image">🍨</div>
+
+            <h3>Ice Cream</h3>
+
+            <p>Vanilla / Chocolate / Strawberry</p>
+
+            <h4>₹120</h4>
+
+            <input type="number" id="iceQty" min="0" value="0">
+
+            <button onclick="addToCart('Ice Cream',120,'iceQty')">
+
+                Add To Cart
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Cart Summary -->
+
+    <div class="food-summary">
+
+        <h2>🛒 Your Food Cart</h2>
+
+        <table class="summary-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Food Item</th>
+
+                    <th>Quantity</th>
+
+                    <th>Price</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="cartTable">
+
+                <tr>
+
+                    <td colspan="3" style="text-align:center">
+
+                        No items added.
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+            <tfoot>
+
+                <tr>
+
+                    <td colspan="2"><strong>Grand Total</strong></td>
+
+                    <td id="grandTotal"><strong>₹0</strong></td>
+
+                </tr>
+
+            </tfoot>
+
+        </table>
+<div class="summary-buttons">
+
+    <button id="clearCart" class="clear-btn">
+        Clear Cart
+    </button>
+
+    <button id="confirmBooking" class="confirm-btn">
+        Confirm Food Booking
+    </button>
+
+</div>        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <p>
+
+        © 2026 Fun & Food Water Park | All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/food.js"></script>
+
+</body>
+
+</html>
